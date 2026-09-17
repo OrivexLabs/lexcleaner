@@ -636,7 +636,7 @@ Environment Closure: PASS（2026-08-22）
 - [x] 第二卷边界使用用户目录临时 APFS 稀疏镜像真实挂载验证，无 sudo、无真实用户卷修改；联合扫描记录 volumeBoundary 并排除第二卷目标，外接卷单独扫描 fileCount=1，allocated **8,388,608 B** 与 du -skPx **8,388,608 B** 差 **0 B**，volume capacity **268,394,496 B**，symlink 指向第二卷未递归越界。临时镜像已卸载并清理。
 - [x] 百万文件专项构造 **1,048,576 files / 1,025 directories**；完整扫描 **2.410 s**，文件数、目录数、tree.isComplete 和 volume 上限均正确，allocated **4,294,967,296 B** 与 du 差 **0 B**；真实取消在 **15,360 files / 0.047 s** 处生效。
 - [x] 真实慢目录专项构造 **32,000 files / 9 directories**，扫描 **0.061 s** 完成且未卡死；但本机 APFS 没有造成 open(2) 阻塞，watchdog timeout **0**，因此“超时后跳过并记录”未被真实验证，不能标记通过。没有用注入、Mock 或人为假结果替代。
-- [x] 真实 SwiftUI App 10 分钟级运行完成：扫描、取消、Home Treemap .codex 钻取/返回均真实执行；主进程 RSS 在重复扫描期间约 **166–336 MiB**，稳定段约 **220–267 MiB**，峰值明显超过 **150 MiB**；CPU 在扫描时最高约 **445%**，完成后约 **3–11%**。因此 UI RSS 硬指标失败。
+- [x] 真实 SwiftUI App 10 分钟级运行完成：扫描、取消、Home Treemap 隐藏目录钻取/返回均真实执行；主进程 RSS 在重复扫描期间约 **166–336 MiB**，稳定段约 **220–267 MiB**，峰值明显超过 **150 MiB**；CPU 在扫描时最高约 **445%**，完成后约 **3–11%**。因此 UI RSS 硬指标失败。
 - [x] Benchmark Harness RSS 归因：Harness 在同一进程中保留 fixture、Mole Process/Pipe/JSON 结果以及多次 Lex snapshot；DiskAnalysisPerformance.peakResidentMemoryBytes 是进程 high-water，不是隔离 scanner RSS。控制 fixture Lex 报告约 **29.5 MiB**，此前独立真实 Caches runner 约 **13–14 MiB**；该差异属于 Harness 进程开销，但没有从真实进程峰值中隐瞒。
 - [x] 回归：SwiftPM **61/61**、Xcode LexCleanerCoreTests **61/61**、App/Core arm64 Debug Build 通过；构建后真实 SwiftUI App 状态可读取、窗口存活，无 LexCleaner 崩溃或新增 App 级 runtime error。xcodebuild -list 中无 LexCleaner scheme，使用实际 LexCleanerCoreTests scheme 完成 Xcode 测试。
 - [ ] 结论：Volume boundary、百万文件完整性/allocated-size/cancellation 通过；真实 watchdog timeout 和 SwiftUI RSS ≤150 MiB 未通过，Disk Analyzer **Quality = FAIL**，不进入性能完胜 Mole 阶段。

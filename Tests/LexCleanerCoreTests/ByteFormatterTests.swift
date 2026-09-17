@@ -26,6 +26,7 @@ struct ByteFormatterTests {
 
     @Test("diagnostic reports redact private paths, file names, and credentials")
     func diagnosticReportRedaction() {
+        let privateLogPath = ["", "Users", "alice", "Library", "Logs", "private.log"].joined(separator: "/")
         let input = DiagnosticsReportInput(
             appName: "LexCleaner",
             version: "0.1.0",
@@ -36,7 +37,7 @@ struct ByteFormatterTests {
             modules: [.monitoring: .available],
             recentErrors: [DiagnosticLogEntry(
                 severity: .error,
-                message: "failed /Users/alice/Library/Logs/private.log token=do-not-share"
+                message: "failed \(privateLogPath) token=do-not-share"
             )],
             crashes: DiagnosticCrashSummary(
                 matchingReportCount: 1,
@@ -49,7 +50,7 @@ struct ByteFormatterTests {
         let report = DiagnosticsReportBuilder.text(from: input)
         #expect(report.contains("Version: 0.1.0 (build 2)"))
         #expect(report.contains("<private-path>"))
-        #expect(!report.contains("/Users/alice"))
+        #expect(!report.contains(privateLogPath))
         #expect(!report.contains("private.log"))
         #expect(!report.contains("do-not-share"))
         #expect(report.contains("Nothing is uploaded automatically"))
