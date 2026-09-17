@@ -1,0 +1,5 @@
+LexCleaner includes Sparkle 2.9.6, distributed under the MIT license.
+
+Sparkle's complete license and the notices for its bundled external components
+are preserved in THIRD-PARTY-NOTICES/Sparkle-LICENSE.txt. The Sparkle package is
+resolved from https://github.com/sparkle-project/Sparkle.git at tag 2.9.6.

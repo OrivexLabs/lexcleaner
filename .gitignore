@@ -1,0 +1,45 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode / SwiftPM generated output
+DerivedData/
+build/
+.build/
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM/
+
+# User-specific workspace state (shared project files remain tracked)
+**/xcuserdata/
+**/IDEWorkspaceChecks.plist
+
+# Local diagnostics, temporary files and test output
+*.log
+__pycache__/
+*.py[cod]
+logs/
+tmp/
+temp/
+.tmp/
+coverage/
+test-results/
+test-output/
+*.swp
+*.swo
+*~
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.key
+*.mobileprovision

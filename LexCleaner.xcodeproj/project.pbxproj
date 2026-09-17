@@ -1,0 +1,226 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		301000000000000000000001 /* SafeDeleteEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121000000000000000000001 /* SafeDeleteEngine.swift */; };
+		302000000000000000000001 /* LexCleanerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111000000000000000000001 /* LexCleanerApp.swift */; };
+		303000000000000000000001 /* LexCleanerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201000000000000000000001 /* LexCleanerCore.framework */; };
+		304000000000000000000001 /* SafeDeleteEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131000000000000000000001 /* SafeDeleteEngineTests.swift */; };
+		305000000000000000000001 /* LexCleanerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201000000000000000000001 /* LexCleanerCore.framework */; };
+		306000000000000000000001 /* LexCleanerCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 201000000000000000000001 /* LexCleanerCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy,); }; };
+		313000000000000000000001 /* LexCleanerCore.framework in Test Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 201000000000000000000001 /* LexCleanerCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy,); }; };
+		307000000000000000000001 /* ScanEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122000000000000000000001 /* ScanEngine.swift */; };
+		308000000000000000000001 /* ScanEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132000000000000000000001 /* ScanEngineTests.swift */; };
+		309000000000000000000001 /* ClassificationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123000000000000000000001 /* ClassificationEngine.swift */; };
+		310000000000000000000001 /* ClassificationEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133000000000000000000001 /* ClassificationEngineTests.swift */; };
+		311000000000000000000001 /* CleanupPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124000000000000000000001 /* CleanupPlanner.swift */; };
+		312000000000000000000001 /* CleanupPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134000000000000000000001 /* CleanupPlannerTests.swift */; };
+		314000000000000000000001 /* MonitoringModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125000000000000000000001 /* MonitoringModels.swift */; };
+		315000000000000000000001 /* MonitoringCollectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126000000000000000000001 /* MonitoringCollectors.swift */; };
+		316000000000000000000001 /* MonitoringSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127000000000000000000001 /* MonitoringSampler.swift */; };
+		317000000000000000000001 /* MonitoringEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135000000000000000000001 /* MonitoringEngineTests.swift */; };
+		318000000000000000000001 /* HardwareModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128000000000000000000001 /* HardwareModels.swift */; };
+		319000000000000000000001 /* HardwareCollectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129000000000000000000001 /* HardwareCollectors.swift */; };
+		320000000000000000000001 /* HardwareSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130000000000000000000001 /* HardwareSampler.swift */; };
+		321000000000000000000001 /* HardwareEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136000000000000000000001 /* HardwareEngineTests.swift */; };
+		322000000000000000000001 /* DiskAnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137000000000000000000001 /* DiskAnalysisTests.swift */; };
+		323000000000000000000001 /* DiskAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138000000000000000000001 /* DiskAnalysis.swift */; };
+		324000000000000000000001 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139000000000000000000001 /* AppManager.swift */; };
+		325000000000000000000001 /* AppManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140000000000000000000001 /* AppManagerTests.swift */; };
+		326000000000000000000001 /* StartupModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141000000000000000000001 /* StartupModels.swift */; };
+		327000000000000000000001 /* StartupReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142000000000000000000001 /* StartupReader.swift */; };
+		328000000000000000000001 /* PrivacyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143000000000000000000001 /* PrivacyModels.swift */; };
+		329000000000000000000001 /* PrivacyReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144000000000000000000001 /* PrivacyReader.swift */; };
+		330000000000000000000001 /* AppUpdateModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145000000000000000000001 /* AppUpdateModels.swift */; };
+		331000000000000000000001 /* AppUpdateProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146000000000000000000001 /* AppUpdateProviders.swift */; };
+		332000000000000000000002 /* SparkleUpdateConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149000000000000000000002 /* SparkleUpdateConfiguration.swift */; };
+		332000000000000000000001 /* SystemToolsEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147000000000000000000001 /* SystemToolsEngineTests.swift */; };
+		333000000000000000000001 /* AppShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153000000000000000000001 /* AppShell.swift */; };
+		334000000000000000000001 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154000000000000000000001 /* DashboardViewModel.swift */; };
+		335000000000000000000001 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155000000000000000000001 /* DashboardView.swift */; };
+		336000000000000000000001 /* CleanerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156000000000000000000001 /* CleanerViewModel.swift */; };
+		337000000000000000000001 /* CleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157000000000000000000001 /* CleanerView.swift */; };
+		338000000000000000000001 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 158000000000000000000001 /* Localizable.xcstrings */; };
+		339000000000000000000001 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159000000000000000000001 /* L10n.swift */; };
+		340000000000000000000001 /* AppManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160000000000000000000001 /* AppManagerViewModel.swift */; };
+		341000000000000000000001 /* AppManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161000000000000000000001 /* AppManagerView.swift */; };
+		342000000000000000000001 /* DiskAnalyzerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162000000000000000000001 /* DiskAnalyzerViewModel.swift */; };
+		343000000000000000000001 /* DiskAnalyzerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163000000000000000000001 /* DiskAnalyzerView.swift */; };
+		344000000000000000000001 /* ByteFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164000000000000000000001 /* ByteFormatter.swift */; };
+		345000000000000000000001 /* ByteFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148000000000000000000001 /* ByteFormatterTests.swift */; };
+		346000000000000000000001 /* MonitoringHardwareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165000000000000000000001 /* MonitoringHardwareView.swift */; };
+		347000000000000000000001 /* SystemToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166000000000000000000001 /* SystemToolsView.swift */; };
+		348000000000000000000001 /* SystemToolsSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167000000000000000000001 /* SystemToolsSupport.swift */; };
+		349000000000000000000001 /* AppUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168000000000000000000001 /* AppUpdateModel.swift */; };
+		350000000000000000000001 /* MenuBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169000000000000000000001 /* MenuBarModel.swift */; };
+		351000000000000000000001 /* MenuBarQuickPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170000000000000000000001 /* MenuBarQuickPanel.swift */; };
+		352000000000000000000001 /* SparkleUpdaterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171000000000000000000001 /* SparkleUpdaterService.swift */; };
+		353000000000000000000001 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 901000000000000000000001 /* Sparkle */; };
+		354000000000000000000001 /* NetworkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172000000000000000000001 /* NetworkModels.swift */; };
+		355000000000000000000001 /* NetworkStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173000000000000000000001 /* NetworkStatistics.swift */; };
+		356000000000000000000001 /* NetworkCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174000000000000000000001 /* NetworkCollector.swift */; };
+		359000000000000000000001 /* NetworkDNSConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177000000000000000000001 /* NetworkDNSConfiguration.swift */; };
+		357000000000000000000001 /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175000000000000000000001 /* NetworkView.swift */; };
+		358000000000000000000001 /* NetworkOptimizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176000000000000000000001 /* NetworkOptimizerTests.swift */; };
+		360000000000000000000001 /* DiagnosticsReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178000000000000000000001 /* DiagnosticsReport.swift */; };
+		361000000000000000000001 /* DiagnosticsSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179000000000000000000001 /* DiagnosticsSupport.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		111000000000000000000001 /* LexCleanerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexCleanerApp.swift; sourceTree = "<group>"; };
+		112000000000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		121000000000000000000001 /* SafeDeleteEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeDeleteEngine.swift; sourceTree = "<group>"; };
+		122000000000000000000001 /* ScanEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanEngine.swift; sourceTree = "<group>"; };
+		123000000000000000000001 /* ClassificationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationEngine.swift; sourceTree = "<group>"; };
+		124000000000000000000001 /* CleanupPlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanupPlanner.swift; sourceTree = "<group>"; };
+		125000000000000000000001 /* MonitoringModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringModels.swift; sourceTree = "<group>"; };
+		126000000000000000000001 /* MonitoringCollectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringCollectors.swift; sourceTree = "<group>"; };
+		127000000000000000000001 /* MonitoringSampler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringSampler.swift; sourceTree = "<group>"; };
+		128000000000000000000001 /* HardwareModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareModels.swift; sourceTree = "<group>"; };
+		129000000000000000000001 /* HardwareCollectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareCollectors.swift; sourceTree = "<group>"; };
+		130000000000000000000001 /* HardwareSampler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareSampler.swift; sourceTree = "<group>"; };
+		131000000000000000000001 /* SafeDeleteEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeDeleteEngineTests.swift; sourceTree = "<group>"; };
+		132000000000000000000001 /* ScanEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanEngineTests.swift; sourceTree = "<group>"; };
+		133000000000000000000001 /* ClassificationEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationEngineTests.swift; sourceTree = "<group>"; };
+		134000000000000000000001 /* CleanupPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanupPlannerTests.swift; sourceTree = "<group>"; };
+		135000000000000000000001 /* MonitoringEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringEngineTests.swift; sourceTree = "<group>"; };
+		136000000000000000000001 /* HardwareEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareEngineTests.swift; sourceTree = "<group>"; };
+		137000000000000000000001 /* DiskAnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskAnalysisTests.swift; sourceTree = "<group>"; };
+		138000000000000000000001 /* DiskAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskAnalysis.swift; sourceTree = "<group>"; };
+		139000000000000000000001 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		140000000000000000000001 /* AppManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManagerTests.swift; sourceTree = "<group>"; };
+		141000000000000000000001 /* StartupModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupModels.swift; sourceTree = "<group>"; };
+		142000000000000000000001 /* StartupReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupReader.swift; sourceTree = "<group>"; };
+		143000000000000000000001 /* PrivacyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyModels.swift; sourceTree = "<group>"; };
+		144000000000000000000001 /* PrivacyReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyReader.swift; sourceTree = "<group>"; };
+		145000000000000000000001 /* AppUpdateModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateModels.swift; sourceTree = "<group>"; };
+		146000000000000000000001 /* AppUpdateProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateProviders.swift; sourceTree = "<group>"; };
+		147000000000000000000001 /* SystemToolsEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemToolsEngineTests.swift; sourceTree = "<group>"; };
+		153000000000000000000001 /* AppShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShell.swift; sourceTree = "<group>"; };
+		154000000000000000000001 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		155000000000000000000001 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		156000000000000000000001 /* CleanerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerViewModel.swift; sourceTree = "<group>"; };
+		157000000000000000000001 /* CleanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerView.swift; sourceTree = "<group>"; };
+		158000000000000000000001 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		159000000000000000000001 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		160000000000000000000001 /* AppManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManagerViewModel.swift; sourceTree = "<group>"; };
+		161000000000000000000001 /* AppManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManagerView.swift; sourceTree = "<group>"; };
+		162000000000000000000001 /* DiskAnalyzerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskAnalyzerViewModel.swift; sourceTree = "<group>"; };
+		163000000000000000000001 /* DiskAnalyzerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskAnalyzerView.swift; sourceTree = "<group>"; };
+		164000000000000000000001 /* ByteFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteFormatter.swift; sourceTree = "<group>"; };
+		148000000000000000000001 /* ByteFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteFormatterTests.swift; sourceTree = "<group>"; };
+		149000000000000000000002 /* SparkleUpdateConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleUpdateConfiguration.swift; sourceTree = "<group>"; };
+		165000000000000000000001 /* MonitoringHardwareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringHardwareView.swift; sourceTree = "<group>"; };
+		166000000000000000000001 /* SystemToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemToolsView.swift; sourceTree = "<group>"; };
+		167000000000000000000001 /* SystemToolsSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemToolsSupport.swift; sourceTree = "<group>"; };
+		168000000000000000000001 /* AppUpdateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateModel.swift; sourceTree = "<group>"; };
+		169000000000000000000001 /* MenuBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarModel.swift; sourceTree = "<group>"; };
+		170000000000000000000001 /* MenuBarQuickPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarQuickPanel.swift; sourceTree = "<group>"; };
+		171000000000000000000001 /* SparkleUpdaterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleUpdaterService.swift; sourceTree = "<group>"; };
+		172000000000000000000001 /* NetworkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModels.swift; sourceTree = "<group>"; };
+		173000000000000000000001 /* NetworkStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatistics.swift; sourceTree = "<group>"; };
+		174000000000000000000001 /* NetworkCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCollector.swift; sourceTree = "<group>"; };
+		175000000000000000000001 /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
+		176000000000000000000001 /* NetworkOptimizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOptimizerTests.swift; sourceTree = "<group>"; };
+		177000000000000000000001 /* NetworkDNSConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDNSConfiguration.swift; sourceTree = "<group>"; };
+		178000000000000000000001 /* DiagnosticsReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticsReport.swift; sourceTree = "<group>"; };
+		179000000000000000000001 /* DiagnosticsSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticsSupport.swift; sourceTree = "<group>"; };
+		201000000000000000000001 /* LexCleanerCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LexCleanerCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		202000000000000000000001 /* LexCleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LexCleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		203000000000000000000001 /* LexCleanerCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LexCleanerCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		501000000000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (303000000000000000000001 /* LexCleanerCore.framework in Frameworks */, 353000000000000000000001 /* Sparkle in Frameworks */,); runOnlyForDeploymentPostprocessing = 0; };
+		502000000000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (305000000000000000000001 /* LexCleanerCore.framework in Frameworks */,); runOnlyForDeploymentPostprocessing = 0; };
+		503000000000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100000000000000000000001 = {isa = PBXGroup; children = (101000000000000000000001 /* App */, 102000000000000000000001 /* Sources */, 103000000000000000000001 /* Tests */, 104000000000000000000001 /* Project Files */, 105000000000000000000001 /* Products */,); sourceTree = "<group>"; };
+		101000000000000000000001 /* App */ = {isa = PBXGroup; children = (106000000000000000000001 /* LexCleanerApp Sources */, 112000000000000000000001 /* Info.plist */,); path = App; sourceTree = "<group>"; };
+		106000000000000000000001 /* LexCleanerApp Sources */ = {isa = PBXGroup; children = (111000000000000000000001 /* LexCleanerApp.swift */, 153000000000000000000001 /* AppShell.swift */, 154000000000000000000001 /* DashboardViewModel.swift */, 155000000000000000000001 /* DashboardView.swift */, 165000000000000000000001 /* MonitoringHardwareView.swift */, 166000000000000000000001 /* SystemToolsView.swift */, 167000000000000000000001 /* SystemToolsSupport.swift */, 168000000000000000000001 /* AppUpdateModel.swift */, 169000000000000000000001 /* MenuBarModel.swift */, 170000000000000000000001 /* MenuBarQuickPanel.swift */, 171000000000000000000001 /* SparkleUpdaterService.swift */, 175000000000000000000001 /* NetworkView.swift */, 156000000000000000000001 /* CleanerViewModel.swift */, 157000000000000000000001 /* CleanerView.swift */, 160000000000000000000001 /* AppManagerViewModel.swift */, 161000000000000000000001 /* AppManagerView.swift */, 162000000000000000000001 /* DiskAnalyzerViewModel.swift */, 163000000000000000000001 /* DiskAnalyzerView.swift */, 159000000000000000000001 /* L10n.swift */, 158000000000000000000001 /* Localizable.xcstrings */, 179000000000000000000001 /* DiagnosticsSupport.swift */,); path = LexCleanerApp; sourceTree = "<group>"; };
+		102000000000000000000001 /* Sources */ = {isa = PBXGroup; children = (103000000000000000000002 /* SafeDelete */, 103000000000000000000003 /* Scan */, 103000000000000000000004 /* Classification */, 103000000000000000000005 /* Cleanup */, 103000000000000000000006 /* Monitoring */, 103000000000000000000007 /* Hardware */, 103000000000000000000008 /* DiskAnalysis */, 103000000000000000000009 /* AppManager */, 103000000000000000000010 /* Startup */, 103000000000000000000011 /* Privacy */, 103000000000000000000012 /* AppUpdates */, 103000000000000000000013 /* Formatting */, 103000000000000000000014 /* Network */, 103000000000000000000015 /* Diagnostics */,); path = Sources/LexCleanerCore; sourceTree = "<group>"; };
+		103000000000000000000002 /* SafeDelete */ = {isa = PBXGroup; children = (121000000000000000000001 /* SafeDeleteEngine.swift */,); path = SafeDelete; sourceTree = "<group>"; };
+		103000000000000000000003 /* Scan */ = {isa = PBXGroup; children = (122000000000000000000001 /* ScanEngine.swift */,); path = Scan; sourceTree = "<group>"; };
+		103000000000000000000004 /* Classification */ = {isa = PBXGroup; children = (123000000000000000000001 /* ClassificationEngine.swift */,); path = Classification; sourceTree = "<group>"; };
+		103000000000000000000005 /* Cleanup */ = {isa = PBXGroup; children = (124000000000000000000001 /* CleanupPlanner.swift */,); path = Cleanup; sourceTree = "<group>"; };
+		103000000000000000000006 /* Monitoring */ = {isa = PBXGroup; children = (125000000000000000000001 /* MonitoringModels.swift */, 126000000000000000000001 /* MonitoringCollectors.swift */, 127000000000000000000001 /* MonitoringSampler.swift */,); path = Monitoring; sourceTree = "<group>"; };
+		103000000000000000000007 /* Hardware */ = {isa = PBXGroup; children = (128000000000000000000001 /* HardwareModels.swift */, 129000000000000000000001 /* HardwareCollectors.swift */, 130000000000000000000001 /* HardwareSampler.swift */,); path = Hardware; sourceTree = "<group>"; };
+		103000000000000000000008 /* DiskAnalysis */ = {isa = PBXGroup; children = (138000000000000000000001 /* DiskAnalysis.swift */); path = DiskAnalysis; sourceTree = "<group>"; };
+		103000000000000000000009 /* AppManager */ = {isa = PBXGroup; children = (139000000000000000000001 /* AppManager.swift */); path = AppManager; sourceTree = "<group>"; };
+		103000000000000000000010 /* Startup */ = {isa = PBXGroup; children = (141000000000000000000001 /* StartupModels.swift */, 142000000000000000000001 /* StartupReader.swift */,); path = Startup; sourceTree = "<group>"; };
+		103000000000000000000011 /* Privacy */ = {isa = PBXGroup; children = (143000000000000000000001 /* PrivacyModels.swift */, 144000000000000000000001 /* PrivacyReader.swift */,); path = Privacy; sourceTree = "<group>"; };
+		103000000000000000000012 /* AppUpdates */ = {isa = PBXGroup; children = (145000000000000000000001 /* AppUpdateModels.swift */, 146000000000000000000001 /* AppUpdateProviders.swift */, 149000000000000000000002 /* SparkleUpdateConfiguration.swift */,); path = AppUpdates; sourceTree = "<group>"; };
+		103000000000000000000013 /* Formatting */ = {isa = PBXGroup; children = (164000000000000000000001 /* ByteFormatter.swift */,); path = Formatting; sourceTree = "<group>"; };
+		103000000000000000000014 /* Network */ = {isa = PBXGroup; children = (172000000000000000000001 /* NetworkModels.swift */, 173000000000000000000001 /* NetworkStatistics.swift */, 174000000000000000000001 /* NetworkCollector.swift */, 177000000000000000000001 /* NetworkDNSConfiguration.swift */,); path = Network; sourceTree = "<group>"; };
+		103000000000000000000015 /* Diagnostics */ = {isa = PBXGroup; children = (178000000000000000000001 /* DiagnosticsReport.swift */,); path = Diagnostics; sourceTree = "<group>"; };
+		103000000000000000000001 /* Tests */ = {isa = PBXGroup; children = (131000000000000000000001 /* SafeDeleteEngineTests.swift */, 132000000000000000000001 /* ScanEngineTests.swift */, 133000000000000000000001 /* ClassificationEngineTests.swift */, 134000000000000000000001 /* CleanupPlannerTests.swift */, 135000000000000000000001 /* MonitoringEngineTests.swift */, 136000000000000000000001 /* HardwareEngineTests.swift */, 137000000000000000000001 /* DiskAnalysisTests.swift */, 140000000000000000000001 /* AppManagerTests.swift */, 147000000000000000000001 /* SystemToolsEngineTests.swift */, 148000000000000000000001 /* ByteFormatterTests.swift */, 176000000000000000000001 /* NetworkOptimizerTests.swift */,); path = Tests/LexCleanerCoreTests; sourceTree = "<group>"; };
+		104000000000000000000001 /* Project Files */ = {isa = PBXGroup; children = (); path = ""; sourceTree = "<group>"; };
+		105000000000000000000001 /* Products */ = {isa = PBXGroup; children = (201000000000000000000001 /* LexCleanerCore.framework */, 202000000000000000000001 /* LexCleaner.app */, 203000000000000000000001 /* LexCleanerCoreTests.xctest */,); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		401000000000000000000001 /* LexCleanerCore */ = {isa = PBXNativeTarget; buildConfigurationList = 701000000000000000000001 /* Build configuration list for PBXNativeTarget "LexCleanerCore" */; buildPhases = (601000000000000000000001 /* Sources */); buildRules = (); dependencies = (); name = LexCleanerCore; productName = LexCleanerCore; productReference = 201000000000000000000001 /* LexCleanerCore.framework */; productType = "com.apple.product-type.framework"; };
+		402000000000000000000001 /* LexCleanerApp */ = {isa = PBXNativeTarget; buildConfigurationList = 702000000000000000000001 /* Build configuration list for PBXNativeTarget "LexCleanerApp" */; buildPhases = (602000000000000000000001 /* Sources */, 501000000000000000000001 /* Frameworks */, 603000000000000000000001 /* Resources */, 606000000000000000000001 /* Embed Frameworks */); buildRules = (); dependencies = (801000000000000000000001 /* LexCleanerCore */,); name = LexCleanerApp; packageProductDependencies = (901000000000000000000001 /* Sparkle */,); productName = LexCleaner; productReference = 202000000000000000000001 /* LexCleaner.app */; productType = "com.apple.product-type.application"; };
+		403000000000000000000001 /* LexCleanerCoreTests */ = {isa = PBXNativeTarget; buildConfigurationList = 703000000000000000000001 /* Build configuration list for PBXNativeTarget "LexCleanerCoreTests" */; buildPhases = (604000000000000000000001 /* Sources */, 502000000000000000000001 /* Frameworks */, 605000000000000000000001 /* Resources */, 607000000000000000000001 /* Embed Frameworks */); buildRules = (); dependencies = (802000000000000000000001 /* LexCleanerCore */,); name = LexCleanerCoreTests; productName = LexCleanerCoreTests; productReference = 203000000000000000000001 /* LexCleanerCoreTests.xctest */; productType = "com.apple.product-type.bundle.unit-test"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		900000000000000000000001 /* Project object */ = {isa = PBXProject; attributes = { LastSwiftUpdateCheck = 2600; ORGANIZATIONNAME = LexCleaner; TargetAttributes = { 402000000000000000000001 = { CreatedOnToolsVersion = 26.0; }; 403000000000000000000001 = { CreatedOnToolsVersion = 26.0; TestTargetID = 402000000000000000000001; }; }; }; buildConfigurationList = 704000000000000000000001 /* Build configuration list for PBXProject "LexCleaner" */; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, zh-Hans); mainGroup = 100000000000000000000001; packageReferences = (902000000000000000000001 /* XCRemoteSwiftPackageReference "Sparkle" */,); productRefGroup = 105000000000000000000001 /* Products */; projectDirPath = ""; projectRoot = ""; targets = (401000000000000000000001 /* LexCleanerCore */, 402000000000000000000001 /* LexCleanerApp */, 403000000000000000000001 /* LexCleanerCoreTests */,); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		603000000000000000000001 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (338000000000000000000001 /* Localizable.xcstrings in Resources */,); runOnlyForDeploymentPostprocessing = 0; };
+		605000000000000000000001 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		606000000000000000000001 /* Embed Frameworks */ = {isa = PBXCopyFilesBuildPhase; buildActionMask = 2147483647; dstPath = ""; dstSubfolderSpec = 10; files = (306000000000000000000001 /* LexCleanerCore.framework in Embed Frameworks */,); name = "Embed Frameworks"; runOnlyForDeploymentPostprocessing = 0; };
+		607000000000000000000001 /* Embed Frameworks */ = {isa = PBXCopyFilesBuildPhase; buildActionMask = 2147483647; dstPath = ""; dstSubfolderSpec = 10; files = (313000000000000000000001 /* LexCleanerCore.framework in Test Embed Frameworks */,); name = "Embed Frameworks"; runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		601000000000000000000001 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (301000000000000000000001 /* SafeDeleteEngine.swift in Sources */, 307000000000000000000001 /* ScanEngine.swift in Sources */, 309000000000000000000001 /* ClassificationEngine.swift in Sources */, 311000000000000000000001 /* CleanupPlanner.swift in Sources */, 314000000000000000000001 /* MonitoringModels.swift in Sources */, 315000000000000000000001 /* MonitoringCollectors.swift in Sources */, 316000000000000000000001 /* MonitoringSampler.swift in Sources */, 318000000000000000000001 /* HardwareModels.swift in Sources */, 319000000000000000000001 /* HardwareCollectors.swift in Sources */, 320000000000000000000001 /* HardwareSampler.swift in Sources */, 323000000000000000000001 /* DiskAnalysis.swift in Sources */, 324000000000000000000001 /* AppManager.swift in Sources */, 326000000000000000000001 /* StartupModels.swift in Sources */, 327000000000000000000001 /* StartupReader.swift in Sources */, 328000000000000000000001 /* PrivacyModels.swift in Sources */, 329000000000000000000001 /* PrivacyReader.swift in Sources */, 330000000000000000000001 /* AppUpdateModels.swift in Sources */, 331000000000000000000001 /* AppUpdateProviders.swift in Sources */, 332000000000000000000002 /* SparkleUpdateConfiguration.swift in Sources */, 344000000000000000000001 /* ByteFormatter.swift in Sources */, 354000000000000000000001 /* NetworkModels.swift in Sources */, 355000000000000000000001 /* NetworkStatistics.swift in Sources */, 356000000000000000000001 /* NetworkCollector.swift in Sources */, 359000000000000000000001 /* NetworkDNSConfiguration.swift in Sources */, 360000000000000000000001 /* DiagnosticsReport.swift in Sources */,); runOnlyForDeploymentPostprocessing = 0; };
+		602000000000000000000001 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (302000000000000000000001 /* LexCleanerApp.swift in Sources */, 333000000000000000000001 /* AppShell.swift in Sources */, 334000000000000000000001 /* DashboardViewModel.swift in Sources */, 335000000000000000000001 /* DashboardView.swift in Sources */, 346000000000000000000001 /* MonitoringHardwareView.swift in Sources */, 347000000000000000000001 /* SystemToolsView.swift in Sources */, 348000000000000000000001 /* SystemToolsSupport.swift in Sources */, 349000000000000000000001 /* AppUpdateModel.swift in Sources */, 350000000000000000000001 /* MenuBarModel.swift in Sources */, 351000000000000000000001 /* MenuBarQuickPanel.swift in Sources */, 352000000000000000000001 /* SparkleUpdaterService.swift in Sources */, 357000000000000000000001 /* NetworkView.swift in Sources */, 336000000000000000000001 /* CleanerViewModel.swift in Sources */, 337000000000000000000001 /* CleanerView.swift in Sources */, 340000000000000000000001 /* AppManagerViewModel.swift in Sources */, 341000000000000000000001 /* AppManagerView.swift in Sources */, 342000000000000000000001 /* DiskAnalyzerViewModel.swift in Sources */, 343000000000000000000001 /* DiskAnalyzerView.swift in Sources */, 339000000000000000000001 /* L10n.swift in Sources */, 361000000000000000000001 /* DiagnosticsSupport.swift in Sources */,); runOnlyForDeploymentPostprocessing = 0; };
+		604000000000000000000001 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (304000000000000000000001 /* SafeDeleteEngineTests.swift in Sources */, 308000000000000000000001 /* ScanEngineTests.swift in Sources */, 310000000000000000000001 /* ClassificationEngineTests.swift in Sources */, 312000000000000000000001 /* CleanupPlannerTests.swift in Sources */, 317000000000000000000001 /* MonitoringEngineTests.swift in Sources */, 321000000000000000000001 /* HardwareEngineTests.swift in Sources */, 322000000000000000000001 /* DiskAnalysisTests.swift in Sources */, 325000000000000000000001 /* AppManagerTests.swift in Sources */, 332000000000000000000001 /* SystemToolsEngineTests.swift in Sources */, 345000000000000000000001 /* ByteFormatterTests.swift in Sources */, 358000000000000000000001 /* NetworkOptimizerTests.swift in Sources */,); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		801000000000000000000001 /* LexCleanerCore */ = {isa = PBXTargetDependency; target = 401000000000000000000001 /* LexCleanerCore */; };
+		802000000000000000000001 /* LexCleanerCore */ = {isa = PBXTargetDependency; target = 401000000000000000000001 /* LexCleanerCore */; };
+/* End PBXTargetDependency section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		901000000000000000000001 /* Sparkle */ = {isa = XCSwiftPackageProductDependency; package = 902000000000000000000001 /* XCRemoteSwiftPackageReference "Sparkle" */; productName = Sparkle; };
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		902000000000000000000001 /* XCRemoteSwiftPackageReference "Sparkle" */ = {isa = XCRemoteSwiftPackageReference; repositoryURL = "https://github.com/sparkle-project/Sparkle.git"; requirement = {kind = exactVersion; version = 2.9.6; }; };
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCBuildConfiguration section */
+		701000000000000000000010 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; DEFINES_MODULE = YES; DYLIB_INSTALL_NAME_BASE = "@rpath"; ENABLE_TESTABILITY = YES; GENERATE_INFOPLIST_FILE = YES; MACOSX_DEPLOYMENT_TARGET = 13.0; PRODUCT_NAME = LexCleanerCore; SDKROOT = macosx; SKIP_INSTALL = YES; SWIFT_VERSION = 6.0; }; name = Debug; };
+		701000000000000000000011 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; DEFINES_MODULE = YES; DYLIB_INSTALL_NAME_BASE = "@rpath"; GENERATE_INFOPLIST_FILE = YES; MACOSX_DEPLOYMENT_TARGET = 13.0; PRODUCT_NAME = LexCleanerCore; SDKROOT = macosx; SKIP_INSTALL = YES; SWIFT_VERSION = 6.0; }; name = Release; };
+		702000000000000000000010 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGNING_ALLOWED = NO; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = App/Info.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; MACOSX_DEPLOYMENT_TARGET = 13.0; PRODUCT_BUNDLE_IDENTIFIER = com.lexcleaner.app; PRODUCT_NAME = LexCleaner; SDKROOT = macosx; SPARKLE_FEED_URL = ""; SPARKLE_PUBLIC_ED_KEY = ""; SWIFT_VERSION = 6.0; }; name = Debug; };
+		702000000000000000000011 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGNING_ALLOWED = NO; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = App/Info.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; MACOSX_DEPLOYMENT_TARGET = 13.0; PRODUCT_BUNDLE_IDENTIFIER = com.lexcleaner.app; PRODUCT_NAME = LexCleaner; SDKROOT = macosx; SPARKLE_FEED_URL = ""; SPARKLE_PUBLIC_ED_KEY = ""; SWIFT_VERSION = 6.0; }; name = Release; };
+		703000000000000000000010 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGNING_ALLOWED = NO; GENERATE_INFOPLIST_FILE = YES; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks"; MACOSX_DEPLOYMENT_TARGET = 13.0; PRODUCT_BUNDLE_IDENTIFIER = com.lexcleaner.tests; PRODUCT_NAME = LexCleanerCoreTests; SDKROOT = macosx; SWIFT_VERSION = 6.0; }; name = Debug; };
+		703000000000000000000011 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGNING_ALLOWED = NO; GENERATE_INFOPLIST_FILE = YES; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks"; MACOSX_DEPLOYMENT_TARGET = 13.0; PRODUCT_BUNDLE_IDENTIFIER = com.lexcleaner.tests; PRODUCT_NAME = LexCleanerCoreTests; SDKROOT = macosx; SWIFT_VERSION = 6.0; }; name = Release; };
+		704000000000000000000010 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_OBJC_ARC = YES; CLANG_ENABLE_MODULES = YES; SWIFT_VERSION = 6.0; }; name = Debug; };
+		704000000000000000000011 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_OBJC_ARC = YES; CLANG_ENABLE_MODULES = YES; SWIFT_VERSION = 6.0; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		701000000000000000000001 /* Build configuration list for PBXNativeTarget "LexCleanerCore" */ = {isa = XCConfigurationList; buildConfigurations = (701000000000000000000010, 701000000000000000000011,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		702000000000000000000001 /* Build configuration list for PBXNativeTarget "LexCleanerApp" */ = {isa = XCConfigurationList; buildConfigurations = (702000000000000000000010, 702000000000000000000011,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		703000000000000000000001 /* Build configuration list for PBXNativeTarget "LexCleanerCoreTests" */ = {isa = XCConfigurationList; buildConfigurations = (703000000000000000000010, 703000000000000000000011,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		704000000000000000000001 /* Build configuration list for PBXProject "LexCleaner" */ = {isa = XCConfigurationList; buildConfigurations = (704000000000000000000010, 704000000000000000000011,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = 900000000000000000000001 /* Project object */;
+}
